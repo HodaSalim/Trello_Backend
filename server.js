@@ -49,6 +49,7 @@ app.use("/boards", boardRoute);
 app.use("/list", listRoute);
 app.use("/card", cardRoute);
 
-app.listen(process.env.PORT || "3601", () => {
+const PORT = process.env.PORT || "3601";
+app.listen(PORT, () => {
   console.log(`Server is online! Port: ${process.env.PORT}`);
 });
